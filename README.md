@@ -8,7 +8,16 @@ Java base module for securing file uploads.
 /bin/bash install-non-maven-dependencies.sh
 ```
 
-2) Import it in the pom.xml of your file upload parent project.
+2) Edit the pom.xml of the securefileupload module for the parent
+```
+<parent>
+  <artifactId>EnterTheNameOfYourArtifact</artifactId>
+  <groupId>EnterTheNameOfYourGroupID</groupId>
+  <version>EnterTheVersion</version>
+</parent>
+```
+
+3) Import it in the pom.xml of your file upload parent project.
 ```
 <dependency>
   <groupId>application.security</groupId>
@@ -18,7 +27,7 @@ Java base module for securing file uploads.
 </dependency>
 ```
 
-3) Validate if the uploaded file is safe or not.
+4) Validate if the uploaded file is safe or not.
 ```
 MultipartFile file;
 SecureFileUploadService fileSecurityCheck = new SecureFileUploadService(file);
