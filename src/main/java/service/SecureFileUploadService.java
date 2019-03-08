@@ -39,8 +39,4 @@ public class SecureFileUploadService {
 
         return valid;
     }
-
-    public void setMultipart(MultipartFile multipart) {
-        this.multipart = multipart;
-    }
 }
