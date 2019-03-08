@@ -23,7 +23,7 @@ public class FileSize implements FileValidator {
         boolean valid = false;
         long maxSize = 5242880; //5MB
 
-        if (multipartFile.getSize() >= maxSize) {
+        if (multipartFile.getSize() <= maxSize) {
             valid = true;
         }
 
