@@ -27,7 +27,7 @@ public class FileName implements FileValidator {
     private boolean validFileNameLength(MultipartFile multipartFile) {
         boolean valid = false;
 
-        if (multipartFile.getOriginalFilename().length() <= 50 && !multipartFile.getOriginalFilename().isEmpty()) {
+        if (multipartFile.getOriginalFilename().length() <= 200 && !multipartFile.getOriginalFilename().isEmpty()) {
             valid = true;
         }
         return valid;

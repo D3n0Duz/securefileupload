@@ -40,3 +40,4 @@ if(fileSecurityCheck.validateIfSafe(file) == true) {
 
 #### Credits
 Highly inspired from the work of https://github.com/righettod/document-upload-protection. :+1:
+https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Protect_FileUpload_Against_Malicious_File.md
